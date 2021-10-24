@@ -1,15 +1,16 @@
 #ifndef food_HEADER
 #define food_HEADER
 
-#ifdef APPLE
+#ifdef __APPLE__
 #define GL_SILENCE_DEPRECATION
 #include <OpenGL/gl.h>
 #include <GLUT/glut.h>
 #else
+#include <GL/gl.h>
 #include <GL/glut.h>
-#include <GL/GL.h>
-#include <time.h>
 #endif
+
+#include <time.h>
 
 #include "field.h"
 
