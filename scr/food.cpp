@@ -4,8 +4,8 @@
 #include <time.h>
 #include <iostream>
 
-GLint Field::GetX(){return this->x;}
-GLint Field::GetY(){return this->y;}
+GLint Food::GetX(){return this->x;}
+GLint Food::GetY(){return this->y;}
 
 void Food::SetAvb(bool arg){
     this->avaliable = arg;

@@ -15,9 +15,9 @@
 #define ROWS 40
 #define FPS 60
 
-//Field Grid(COLUMNS, ROWS);
+Field Grid(COLUMNS, ROWS);
 Player Snake;
-//Food Apple;
+Food Apple;
 void Render();
 
 
@@ -76,11 +76,11 @@ int main(int argc, char** argv)
 
 void Render()
 {
-	// glClear(GL_COLOR_BUFFER_BIT);
-	// Snake.Draw(Grid, Apple);
-	// Apple.Draw(Grid);
-	// Grid.Draw();
-	// glutSwapBuffers();
+	glClear(GL_COLOR_BUFFER_BIT);
+	Snake.Draw(Grid, Apple);
+	Apple.Draw(Grid);
+	Grid.Draw();
+	glutSwapBuffers();
 }
 
 void ResizeWindow(int w, int h)

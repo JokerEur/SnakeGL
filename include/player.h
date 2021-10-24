@@ -22,7 +22,7 @@ enum Dir{
 class Player{
 public:
     Player() = default;
-    ~Player();
+    // ~Player();
     void Draw(Field& grid,Food& food);
     short PlayerDir = RIGHT;
 private:

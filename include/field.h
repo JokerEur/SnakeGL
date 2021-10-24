@@ -16,7 +16,7 @@ class Field{
     public:
         Field() = default;
         Field(const GLint x, const GLint y);
-        ~Field();
+        // ~Field();
         void Draw();
         GLint GetX();
         GLint GetY();

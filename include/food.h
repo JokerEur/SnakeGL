@@ -21,7 +21,7 @@ class Food{
 public: 
 
     Food() = default;
-    ~Food();
+    // ~Food();
     void Draw(Field &obj);
     GLint GetX();
     GLint GetY();
