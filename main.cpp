@@ -10,6 +10,7 @@
 #include "field.h"
 #include "food.h"
 #include "player.h"
+#include <string>
 
 #define COLUMNS 40
 #define ROWS 40
@@ -18,6 +19,7 @@
 Field Grid(COLUMNS, ROWS);
 Player Snake;
 Food Apple;
+
 void Render();
 
 
@@ -64,10 +66,12 @@ int main(int argc, char** argv)
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
 	glutInitWindowSize(500, 500);
 	glutCreateWindow("OpenGL Snake");
+
 	glutDisplayFunc(Render);
 	glutReshapeFunc(ResizeWindow);
 	glutTimerFunc(0, TimerCallback, 0);
 	glutSpecialFunc(Keyboard);
+	
 	Init();
 	glutMainLoop();
 	return 0;

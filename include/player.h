@@ -12,6 +12,9 @@
 #include "field.h"
 #include "food.h"
 
+
+#define MAX_LENGTH 60
+
 enum Dir{
     RIGHT,
     LEFT,
@@ -26,5 +29,6 @@ public:
     void Draw(Field& grid,Food& food);
     short PlayerDir = RIGHT;
 private:
-    GLint x = 20 , y = 20;
+    GLint x[60] = {20,20,20} , y[60] = {20,19,18};
+    GLint length = 3;
 };
